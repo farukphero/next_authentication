@@ -49,7 +49,7 @@ export const login = async (
       verificationToken.token,
     );
 
-    return { success: "Check your email for confirmation." };
+    return { success: "Confirmation email sent!" };
   }
 
   if (existingUser.isTwoFactorEnabled && existingUser.email) {
